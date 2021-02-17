@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TT</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<b>T<img src="images/logo.jpeg">D<img src="images/logo.jpeg"></b>
+				</div>
+
+				<div class="menu">
+					<a href="index.html">Home</a>
+					<a href="profile.html">Profile</a>
+					<a href="">Add List</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+					<a href="#">Register</a>
+					<a href="login.html" id="loginStatus" onclick="logOut()">Login</a>
+				</div>
+			</nav>
+
+			<section class="banner">
+				<h3 class="banner-text">To Do Lists !</h3>
+			</section>
+
+			<section class="forms">
+				<div class="form-heading">
+					<h2>Registeration Form</h2>
+					
+					<form>
+						<div class="form-group">
+							<label>First Name<span class="star">*</span>: </label>
+							<input type="text" name="fname" id="fname" class="form-control" placeholder="  Enter First Name">
+						</div>
+
+						<div class="form-group">
+							<label>Last Name<span class="star">*</span>: </label>
+							<input type="text" name="lname" id="lname" class="form-control" placeholder="  Enter Last Name">
+						</div>
+
+						<div class="form-group">
+							<label>Username<span class="star">*</span>: </label>
+							<input type="text" name="uname" id="uname" class="form-control" placeholder="  Enter username">
+						</div>
+
+						<div class="form-group">
+							<label>Password<span class="star">*</span>: </label>
+							<input type="password" name="pass" id="pass" placeholder="  Enter Password" class="form-control">
+						</div>
+
+
+						<div class="form-group">
+							<label>Gender<span class="star">*</span>: </label>
+							<input type="radio" name="gender" id="m" value="Male" class="form-control-radio"> Male 
+							<input type="radio" name="gender" id="f" value="Female" class="form-control-radio"> Female 
+						</div>
+
+						<div class="form-group">
+							<label> Address<span class="star">*</span>: </label>
+							<textarea placeholder="Enter Address" name="address" id="address" class="form-control"></textarea>	
+						</div>
+
+						<div class="form-group">
+							<label>Profile Image<span class="star">*</span>: </label>
+							<input type="file" name="pimg" id="pimg" class="form-control">
+						</div>
+						<div class="form-group">
+							<label id="alertmsg"></label>
+							<input type="button" onclick="insertRecord()" class="btn-primary" value="Register">
+							<label class="log">Already have an account Please: <a href="login.html">login</a></label>
+						</div>
+					</form>
+				</div>
+			</section>
+			<footer>
+				
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
